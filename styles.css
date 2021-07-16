@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+
+.tools-container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbar{
+
+height: 80%;
+
+width: 60%;
+
+border: none;
+
+border-radius: 20px;
+
+display: flex;
+
+justify-content: space-evenly;
+
+align-items: center;
+
+background-color: aliceblue;
+}
+
+.tool{height: 60%;width: 10%;padding: 0.2%;position: relative;}
+.tool img{
+
+height: 100%;
+
+width: 100%;
+}
+.drawing-container{
+    background-color:white;
+}
+
+#canvas{
+
+}
+
+/* STICKY */
+.sticky-div{
+
+height: 200px;
+
+width: 180px;
+
+top: 20%;
+
+left: 40%;
+
+border: none;
+
+position: absolute;
+}
+
+.sticky-bar{
+
+height: 10%;
+
+width: 100%;
+
+background-color: darkslateblue;
+
+display: flex;
+
+justify-content: flex-end;
+
+align-items: center;
+
+border-top-left-radius: 10px;
+
+border-top-right-radius: 10px;
+}
+.sticky-bar div{
+    height: 70%;
+
+    width: 10%;
+}
+.close{
+
+background-color: orangered;
+
+margin-right: 2%;
+
+border-radius: 5px;
+}
+
+.minimise{
+
+background-color: lightgray;
+    
+margin-right: 2%;
+    
+border-radius: 5px;
+}
+
+.sticky-content{
+    
+height: 90%;
+    
+width: 100%;
+    
+background-color: aliceblue;
+    
+border: none;
+    
+border-bottom-right-radius: 10px;
+    
+border-bottom-left-radius: 10px;
+    
+font-family: 'Roboto', sans-serif;
+    
+outline: none;
+    
+padding: 10px;
+    
+font-size: 1.2rem;
+    
+font-weight: 600;
+}
+
+.sticky-image-div {
+    height: 87%;
+}
+
+.sticky-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* TOOLS */
+.active{
+  opacity: 1; 
+}
+
+.fade{
+  opacity: 0.4;
+}
+
+.hide{
+    display: none;
+}
+
+.tool-options{
+    
+position: absolute;
+    
+/* background-color: aquamarine; */
+    
+height: 100px;
+    
+top: 64px;
+    
+width: 100px;
+    
+border-bottom-left-radius: 10px;
+    
+border-bottom-right-radius: 10px;
+    
+background-color: aliceblue;
+    
+display: flex;
+    
+flex-direction: column;
+    
+align-items: center;
+    
+justify-content: space-evenly;
+}
+
+.pen-size input {
+    width: 100%;
+}
+
+.eraser-size input{
+    width: 100%;
+}
+.pen-size{
+
+width: 100%;
+
+padding: 2%;
+}
+.pen-colors{
+
+display: flex;
+
+justify-content: space-evenly;
+
+width: 100%;
+}
+.pen-colors div{
+
+width: 15px;
+
+height: 15px;
+
+border-radius: 10px;
+}
+.black{
+
+background: black;
+}
+
+.blue{
+
+background: blue;
+}
+.red{
+
+background: red;
+}
+.yellow{
+
+background: yellow;
+}
+.green{
+    
+background-color: green;
+}
+
+.hide{
+    display: none;
+} 
